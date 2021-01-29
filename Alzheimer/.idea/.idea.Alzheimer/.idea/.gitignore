@@ -1,0 +1,11 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/projectSettingsUpdater.xml
+/.idea.Alzheimer.iml
+/modules.xml
+# Datasource local storage ignored files
+/../../../../../../../../:\repos\frankhaugen\alzheimer\Alzheimer\.idea\.idea.Alzheimer\.idea/dataSources/
+/dataSources.local.xml
