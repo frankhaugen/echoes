@@ -1,5 +1,3 @@
-using Interfaces;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
