@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30803.129
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WikipediaDataDownloader", "WikipediaDataDownloader.csproj", "{FBC69BC3-417F-483C-9AF0-61AB19464AFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBC69BC3-417F-483C-9AF0-61AB19464AFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBC69BC3-417F-483C-9AF0-61AB19464AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBC69BC3-417F-483C-9AF0-61AB19464AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBC69BC3-417F-483C-9AF0-61AB19464AFA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {16841B09-DD70-4914-B2EB-DD16EA2392D4}
+	EndGlobalSection
+EndGlobal
