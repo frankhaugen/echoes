@@ -3,11 +3,13 @@ using UnityEngine.UI;
 
 public class MouseClick : MonoBehaviour
 {
-    public Text Text;
-    
-    private void OnMouseDown()
+    void OnMouseDown()
     {
-        Debug.Log($"{Input.mousePosition}");
-        
+        Debug.Log($"{gameObject.name}");
+    }
+    
+    public void Click()
+    {
+        Debug.Log($"{gameObject.name}");
     }
 }
