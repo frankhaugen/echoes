@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace ScriptableObjects
 {
@@ -6,6 +7,6 @@ namespace ScriptableObjects
     public class Item : ScriptableObject
     {
         public string Name;
-        public Sprite Sprite;
+        public List<string> Paragraphs;
     }
 }

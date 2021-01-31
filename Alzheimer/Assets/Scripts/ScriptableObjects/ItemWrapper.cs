@@ -1,6 +1,6 @@
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
-using Image = UnityEngine.UI.Image;
 
 namespace ScriptableObjects
 {
@@ -8,37 +8,21 @@ namespace ScriptableObjects
     {
         public Item Item;
         
-        public Text Name;
-        // public ArticleName ArticleName;
-        // public ItemType Type;
-        public Image Image;
-        // public Text Description;
+        public Text Header;
+        public Text Body;
         
         void Start()
         {
-            Name.text = Item.Name;
-            // ArticleName = Item.ArticleName;
-            // Type = Item.ItemType;
-            Image.sprite = Item.Sprite;
-            // SetDescription();
+            Refresh();
         }
-
-        void SetDescription()
+        
+        public void Refresh()
         {
-            // if (Type == ItemType.Interesting)
-            // {
-                // var wikipedia = new Wikipedia();
-                // var summary = wikipedia.GetSummary(ArticleName);
-                // Description.text = summary.Extract;
-            // }
-            // else if (Type == ItemType.Story)
-            // {
-                // Description.text = string.Join("\n\n", Item.Paragraphs);
-            // }
-            // else
-            // {
-            //     Description.text = "Error!";
-            // }
+            Header.text = Item.Name;
+            if (Item.Paragraphs.Any())
+            {
+                Body.text = string.Join("\n\n", Item.Paragraphs);
+            }
         }
     }
 }
