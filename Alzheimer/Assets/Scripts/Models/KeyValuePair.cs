@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WikipediaDataDownloader.Models
+namespace Models
 {
     public class KeyValuePair<TKey, TValue> where TValue : class, new() where TKey : Enum
     {

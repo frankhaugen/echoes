@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using Models.Enums;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
 namespace ScriptableObjects
 {
