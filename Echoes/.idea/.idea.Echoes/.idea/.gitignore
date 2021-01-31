@@ -1,0 +1,11 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/projectSettingsUpdater.xml
+/modules.xml
+/.idea.Echoes.iml
+/contentModel.xml
+# Datasource local storage ignored files
+/../../../../../../../../:\repos\frankhaugen\echoes\Echoes\.idea\.idea.Echoes\.idea/dataSources/
+/dataSources.local.xml
