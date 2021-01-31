@@ -10,10 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f49cdcdfcf7649bba8e5018139512ac9, type: 3}
-  m_Name: ImageItem
+  m_Name: PaintingItem
   m_EditorClassIdentifier: 
-  Name: Album
-  ArticleName: 1
-  Paragraphs: []
-  Sprite: {fileID: 21300000, guid: 28feb7020baeaf64f8dd2ce95134da7d, type: 3}
-  ItemType: 0
+  Name: A painting
+  Paragraphs:
+  - A wedding gift from her mother... Need to burn that one of these days

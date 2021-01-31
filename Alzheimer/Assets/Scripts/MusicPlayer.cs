@@ -13,7 +13,14 @@ public class MusicPlayer : MonoBehaviour
 
     private void OnDestroy()
     {
-        StartCoroutine(FadeOut());
+        try 
+        {
+            StartCoroutine(FadeOut());
+        }
+        catch
+        {
+            // ignored
+        }
     }
 
     IEnumerator FadeIn() {
