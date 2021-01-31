@@ -58,5 +58,7 @@ public class MusicManager : MonoBehaviour
         
         Music.Stop();
         Music.clip = AudioClips[playingSong];
+        
+        Music.Play();
     }
 }

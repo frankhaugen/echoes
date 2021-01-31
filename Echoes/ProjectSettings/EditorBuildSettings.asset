@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SunRoom.unity
     guid: 8c54a193f0490de419d03afb1ed73945
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: aa19edba2a608c24b99919e29075bab4
   m_configObjects: {}

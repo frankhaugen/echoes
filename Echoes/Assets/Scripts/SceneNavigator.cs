@@ -1,12 +1,16 @@
-using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneNavigator : MonoBehaviour
 {
     public string TargetSceneName;
-    // public GameObject Music;
-    
+    public MusicManager Music;
+
+    private void Awake()
+    {
+        Music = FindObjectOfType<MusicManager>();
+    }
+
     private void OnMouseDown()
     {
         GoToScene();
@@ -14,7 +18,7 @@ public class SceneNavigator : MonoBehaviour
 
     public void GoToScene()
     {
+        Music.NextSong();
         SceneManager.LoadScene(TargetSceneName);
-        // SceneManager.MoveGameObjectToScene(Music, SceneManager.GetSceneByName(TargetSceneName));
     }
 }
