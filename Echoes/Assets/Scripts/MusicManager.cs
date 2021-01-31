@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class MusicManager : MonoBehaviour 
 {
@@ -36,9 +37,26 @@ public class MusicManager : MonoBehaviour
                 Destroy(gameObject);
         }
     }
- 
-    public void Play()
+
+    public AudioSource Music;
+
+    public AudioClip[] AudioClips;
+    private int playingSong = 0;
+    
+    public void Start()
     {
-        //Play some audio!
+        if (!Music.isPlaying)
+        {
+            Music.clip = AudioClips[playingSong];
+            Music.Play();
+        }
+    }
+
+    public void NextSong()
+    {
+        playingSong += 1;
+        
+        Music.Stop();
+        Music.clip = AudioClips[playingSong];
     }
 }

@@ -218,7 +218,7 @@ Transform:
   m_LocalScale: {x: 32.1408, y: 32.1408, z: 32.1408}
   m_Children: []
   m_Father: {fileID: 2032133279}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &63581814
 SpriteRenderer:
@@ -606,6 +606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TargetSceneName: LivingRoom
+  Music: {fileID: 630629035}
 --- !u!1 &630629035
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,6 +617,7 @@ GameObject:
   m_Component:
   - component: {fileID: 630629036}
   - component: {fileID: 630629037}
+  - component: {fileID: 630629038}
   m_Layer: 0
   m_Name: _music
   m_TagString: Untagged
@@ -647,11 +649,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 05b03d23b069a7a49b6ceebbb3077d17, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -733,6 +735,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &630629038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630629035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e330357c123459b9408f21c087e72d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Music: {fileID: 630629037}
 --- !u!1 &1148552958
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,7 +777,7 @@ Transform:
   m_LocalScale: {x: 32.1408, y: 32.1408, z: 32.1408}
   m_Children: []
   m_Father: {fileID: 2032133279}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1148552960
 SpriteRenderer:
@@ -804,7 +819,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 5fca51dd16cd656449da1f256ccfcc77, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1202,7 +1217,7 @@ Transform:
   m_LocalScale: {x: 32.1408, y: 32.1408, z: 32.1408}
   m_Children: []
   m_Father: {fileID: 2032133279}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1899310049
 SpriteRenderer:
@@ -1348,9 +1363,9 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 421623896}
+  - {fileID: 1148552959}
   - {fileID: 63581813}
   - {fileID: 1899310048}
-  - {fileID: 1148552959}
   - {fileID: 1551918684}
   - {fileID: 1334399150}
   - {fileID: 590724889}
