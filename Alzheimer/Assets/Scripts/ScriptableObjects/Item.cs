@@ -9,9 +9,6 @@ namespace ScriptableObjects
     public class Item : ScriptableObject
     {
         public string Name;
-        public ArticleName ArticleName;
-        public List<string> Paragraphs;
         public Sprite Sprite;
-        public ItemType ItemType;
     }
 }
